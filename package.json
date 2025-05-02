@@ -6,21 +6,26 @@
     "node": "22"
   },
   "scripts": {
-    "dev": "concurrently \"sass --watch style.scss ./build/style.css\" \"tsc --watch\" \"serve\""
+    "dev": "concurrently \"sass --watch style.scss ./build/style.css\" \"tsc --watch\" \"serve\" \"tsx node/index.ts\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "22": "^0.0.0",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
     "express": "^4.21.2"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.3",
     "concurrently": "^7.0.0",
     "nodemon": "^2.0.16",
     "sass": "^1.49.9",
     "serve": "^14.2.4",
     "tsx": "^4.19.2",
-    "typescript": "^5.0.0"
+    "typescript": "^5.8.3"
   }
 }
